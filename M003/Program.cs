@@ -2,8 +2,6 @@
 //Array: Variable, welche mehrere Werte halten kann (statt einem Wert)
 //Wird definiert mit Typ + []
 
-using System.Threading.Channels;
-
 int[] zahlen = new int[5]; //Array mit Größe erstellen
 zahlen[0] = 1; //Schreibe an Position 0 die Zahl 1
 zahlen[1] = 2;

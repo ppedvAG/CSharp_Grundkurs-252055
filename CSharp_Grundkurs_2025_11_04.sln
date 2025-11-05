@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36616.10 d17.14
+VisualStudioVersion = 17.14.36616.10
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "M001", "M001\M001.csproj", "{2BA7DF50-C107-40ED-803E-53A14A47A56D}"
 EndProject
@@ -10,6 +10,13 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "M003", "M003\M003.csproj", "{8D562295-BA5D-4ED6-8605-F829539F1AF3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "M004", "M004\M004.csproj", "{9262C7DB-513D-4813-B1C6-46D86D418103}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Projektmappenelemente", "Projektmappenelemente", "{84D27F74-D2BA-6C25-2661-968F101900D9}"
+	ProjectSection(SolutionItems) = preProject
+		Shortcuts.txt = Shortcuts.txt
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "M000", "M000\M000.csproj", "{FF85E8BC-5CBD-47DC-8CB3-918206974AFD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +40,10 @@ Global
 		{9262C7DB-513D-4813-B1C6-46D86D418103}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9262C7DB-513D-4813-B1C6-46D86D418103}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9262C7DB-513D-4813-B1C6-46D86D418103}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF85E8BC-5CBD-47DC-8CB3-918206974AFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF85E8BC-5CBD-47DC-8CB3-918206974AFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF85E8BC-5CBD-47DC-8CB3-918206974AFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF85E8BC-5CBD-47DC-8CB3-918206974AFD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

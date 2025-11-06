@@ -50,7 +50,7 @@ foreach (Fahrzeug fahrzeug in fzg)
 Console.WriteLine($"Es wurden {pkw} PKWs, {schiff} Schiffe, {flugzeug} Flugzeuge produziert.");
 
 //fzg.GroupBy(e => e.GetType()).ToDictionary(e => e.Key, e => e.Count());
-
+//fzg.CountBy(e => e.GetType()).ToDictionary();
 #region Rechner
 //while (true)
 //{

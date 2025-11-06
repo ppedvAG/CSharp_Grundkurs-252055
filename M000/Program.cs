@@ -3,16 +3,18 @@ using System.Text;
 
 Console.OutputEncoding = Encoding.UTF8;
 
-Fahrzeug fzg = new Fahrzeug("VW", 200, 20000);
-fzg.StarteMotor();
-fzg.Beschleunige(50);
-fzg.Beschleunige(500);
-Console.WriteLine(fzg.Info());
-fzg.Beschleunige(-100);
-fzg.StoppeMotor();
-fzg.Beschleunige(-50);
-fzg.StoppeMotor();
+//Übung 6
+//Fahrzeug fzg = new Fahrzeug("VW", 200, 20000);
+//fzg.StarteMotor();
+//fzg.Beschleunige(50);
+//fzg.Beschleunige(500);
+//Console.WriteLine(fzg.Info());
+//fzg.Beschleunige(-100);
+//fzg.StoppeMotor();
+//fzg.Beschleunige(-50);
+//fzg.StoppeMotor();
 
+//Übung 8
 PKW p = new PKW("VW", 250, 20000, 5);
 Console.WriteLine(p.Info());
 
@@ -21,6 +23,33 @@ Console.WriteLine(s.Info());
 
 Flugzeug f = new Flugzeug("Airbus A320", 1000, 20_000_000, "Kerosin");
 Console.WriteLine(f.Info());
+
+//Übung 9
+Fahrzeug[] fzg = new Fahrzeug[10];
+for (int i = 0; i < 10; i++)
+{
+	fzg[i] = Fahrzeug.GeneriereFahrzeug(i.ToString());
+	Console.WriteLine(fzg[i].ToString());
+}
+
+//foreach (Fahrzeug fahrzeug in fzg)
+//	Console.WriteLine(fahrzeug.ToString());
+
+fzg[2].Hupen();
+
+int pkw = 0, schiff = 0, flugzeug = 0;
+foreach (Fahrzeug fahrzeug in fzg)
+{
+	if (fahrzeug is PKW)
+		pkw++;
+	if (fahrzeug is Schiff)
+		schiff++;
+	if (fahrzeug is Flugzeug)
+		flugzeug++;
+}
+Console.WriteLine($"Es wurden {pkw} PKWs, {schiff} Schiffe, {flugzeug} Flugzeuge produziert.");
+
+//fzg.GroupBy(e => e.GetType()).ToDictionary(e => e.Key, e => e.Count());
 
 #region Rechner
 //while (true)

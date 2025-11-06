@@ -13,4 +13,9 @@ public class PKW : Fahrzeug
 	{
 		return base.Info() + $" Es hat {AnzSitze} Sitzplätze.";
 	}
+
+	public override void Hupen()
+	{
+		Console.WriteLine("Huuuuuup");
+	}
 }

@@ -13,4 +13,9 @@ public class Schiff : Fahrzeug
 	{
 		return base.Info() + $" Es hat {Laderaum}m³ Platz.";
 	}
+
+	public override void Hupen()
+	{
+		Console.WriteLine("...");
+	}
 }

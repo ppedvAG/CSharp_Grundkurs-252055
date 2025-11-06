@@ -13,4 +13,9 @@ public class Flugzeug : Fahrzeug
 	{
 		return base.Info() + $" Es fliegt mit {Treibstoff}.";
 	}
+
+	public override void Hupen()
+	{
+		Console.WriteLine("Tröööööt");
+	}
 }

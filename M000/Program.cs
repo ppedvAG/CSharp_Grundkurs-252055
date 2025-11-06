@@ -13,6 +13,15 @@ fzg.StoppeMotor();
 fzg.Beschleunige(-50);
 fzg.StoppeMotor();
 
+PKW p = new PKW("VW", 250, 20000, 5);
+Console.WriteLine(p.Info());
+
+Schiff s = new Schiff("Titanic", 50, 50_000_000, 10_000);
+Console.WriteLine(s.Info());
+
+Flugzeug f = new Flugzeug("Airbus A320", 1000, 20_000_000, "Kerosin");
+Console.WriteLine(f.Info());
+
 #region Rechner
 //while (true)
 //{

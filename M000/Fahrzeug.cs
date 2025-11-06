@@ -19,7 +19,7 @@ public class Fahrzeug
 		Preis = preis;
 	}
 
-	public string Info()
+	public virtual string Info()
 	{
 		string gesamt = $"Das Fahrzeug {Name} kostet {Preis}€ und könnte maximal {MaxV}km/h fahren.";
 		if (MotorLaeuft)

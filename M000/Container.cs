@@ -1,28 +1,8 @@
 ﻿namespace M000;
 
-public class Schiff : Fahrzeug, IBeladbar
+internal class Container : IBeladbar
 {
-	public int Laderaum { get; set; }
-
 	public Fahrzeug GeladenesFahrzeug { get; set; }
-
-	public Schiff(string name, int maxV, double preis, int laderaum) : base(name, maxV, preis)
-	{
-		Laderaum = laderaum;
-	}
-
-	public override string Info()
-	{
-		string gesamt = base.Info() + $" Es hat {Laderaum}m³ Platz.";
-		if (GeladenesFahrzeug != null)
-			gesamt += $" Es hat {GeladenesFahrzeug.Name} geladen.";
-		return gesamt;
-	}
-
-	public override void Hupen()
-	{
-		Console.WriteLine("...");
-	}
 
 	public void Belade(Fahrzeug fzg)
 	{

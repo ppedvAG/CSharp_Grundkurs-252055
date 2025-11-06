@@ -51,6 +51,29 @@ Console.WriteLine($"Es wurden {pkw} PKWs, {schiff} Schiffe, {flugzeug} Flugzeuge
 
 //fzg.GroupBy(e => e.GetType()).ToDictionary(e => e.Key, e => e.Count());
 //fzg.CountBy(e => e.GetType()).ToDictionary();
+
+//Übung 10
+void TesteBeladung(object o1, object o2)
+{
+	if (o1 is IBeladbar)
+	{
+		if (o2 is Fahrzeug)
+		{
+			IBeladbar b = (IBeladbar) o1;
+			Fahrzeug f = (Fahrzeug) o2;
+			b.Belade(f);
+		}
+	}
+
+	if (o1 is Fahrzeug fzg && o2 is IBeladbar bel)
+	{
+		bel.Belade(fzg);
+	}
+}
+
+TesteBeladung(fzg[0], fzg[1]);
+
+
 #region Rechner
 //while (true)
 //{

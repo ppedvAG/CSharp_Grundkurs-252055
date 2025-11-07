@@ -51,7 +51,7 @@ internal class Program
 
 		//Using-Statement
 		//Wird am Ende der Methode geschlossen
-		using StreamWriter sw3 = new StreamWriter(filePath);		
+		using StreamWriter sw3 = new StreamWriter(filePath);	
 		sw3.WriteLine("Hallo");
 		sw3.WriteLine("Welt");
 		sw3.WriteLine("!");

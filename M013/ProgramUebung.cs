@@ -3,7 +3,7 @@ using System.Text.Json;
 
 internal class Program
 {
-	static void Main(string[] args)
+	static void Main2(string[] args)
 	{
 		#region File lesen
 		string readJson = File.ReadAllText(@"..\..\..\Personen.json");
